@@ -26,17 +26,8 @@ describe Array do
       expect([1,2,3,4].my_inject(:*)).to eq(24)
     end  
 
- # context with  symbol do
- #  it can add numbers together
- #  expect([1,23,4].inject(:+)).to eq(10)
+    it 'should work with symbol and initial value' do
+      expect([1,2,3,4].my_inject(10,:+)).to eq(20)
+    end
 
- # context with an argument and a block do
- #  it can add with a starting point
- #  expect([1,2,3,4].inject(10){|mem,item| mem + item}).to eq(10) 
- # end
- 
- # context with an arguemnt and a symbol do
- #  it can  with a starting poiny and a symbol do 
- #    expect( [1,2,3,4].inject(10,:+)).to eq(20)
- #  end
 end
