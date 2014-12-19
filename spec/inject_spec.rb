@@ -19,11 +19,11 @@ describe Array do
     end
 
     it "should work with symbol '+' as parameter" do
-      expect([1,2,3,4].inject(:+)).to eq(10)
+      expect([1,2,3,4].my_inject(:+)).to eq(10)
     end  
 
     it "should work with symbol '*' as parameter" do
-      expect([1,2,3,4].inject(:*)).to eq(24)
+      expect([1,2,3,4].my_inject(:*)).to eq(24)
     end  
 
  # context with  symbol do
@@ -37,6 +37,6 @@ describe Array do
  
  # context with an arguemnt and a symbol do
  #  it can  with a starting poiny and a symbol do 
- #    expect( [1,2,3,4].injec(10,:+)).to eq(20)
+ #    expect( [1,2,3,4].inject(10,:+)).to eq(20)
  #  end
 end
